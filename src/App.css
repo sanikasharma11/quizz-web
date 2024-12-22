@@ -1,0 +1,46 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes score-up {
+  0% {
+    transform: scale(1);
+    color: green;
+  }
+  50% {
+    transform: scale(1.5);
+    color: yellow;
+  }
+  100% {
+    transform: scale(1);
+    color: green;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+.animate-pop-up {
+  animation: pop-up 0.5s ease-out;
+}
+
+.animate-score-up {
+  animation: score-up 1s ease-in-out;
+}
